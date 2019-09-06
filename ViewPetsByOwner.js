@@ -34,9 +34,9 @@ xhr.onload = () => {
 
 }
 
-xhr.open('GET', "http://localhost:9966/petclinic/api/owners/" + 3); //id);
+xhr.open('GET', "http://35.239.205.133:9000/petclinic/api/owners/" + id);
 xhr.send();
 
 function prevPage(){
-    location.href = '';
+    location.href = 'index.html';
 }

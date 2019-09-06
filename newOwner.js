@@ -11,7 +11,7 @@ function submitHandler(form) {
     owner.pets = pets
     const req = new XMLHttpRequest();
 
-    req.open("POST", "http://localhost:9966/petclinic/api/owners");
+    req.open("POST", "http://35.239.205.133:9000/petclinic/api/owners");
 
     req.onload = () => {
 
@@ -19,6 +19,7 @@ function submitHandler(form) {
 
         if (req.status >= 200 && req.status < 300) {
             console.log("success!!")
+            location.href = 'index.html';
         }
         else {
             console.log("fail!!")
